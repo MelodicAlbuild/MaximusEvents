@@ -1,0 +1,45 @@
+name: MaximusEvents
+version: '${project.version}'
+main: net.melodicalbuild.maximusevents.MaximusEvents
+api-version: 1.18
+authors: [ MelodicAlbuild ]
+description: The Events Plugin for the Maximus SMP in Minecraft Version 1.18.1
+
+depend:
+  - MaximusCore
+
+commands:
+  bloodmoon:
+    description: The Blood Moon Event
+    usage: /bloodmoon
+    permission: mev.events.bloodmoon
+  bossbardrop:
+    description: The Bossbar Decrese System
+    usage: /bossbar <bossbarid> <increment>
+    permission: mev.bossbardrop
+  announceevent:
+    description: Announce a Storyline Event
+    usage: /announceevent <time>
+    permission: mev.events.announce
+  startline:
+    description: Start a Storyline
+    usage: /startline <linename>
+    permission: mev.events.start
+  startcouncil:
+    description: Start the Great Council Member
+    usage: /startcouncil <x> <y> <z>
+    aliases:
+      - greatcouncil
+    permission: mev.events.greatcouncil
+  speakcouncil:
+    description: Speak in the words of the Great Council
+    usage: /speakcouncil <council member> <message>
+    aliases:
+      - spc
+    permission: mev.events.greatcouncil
+  speakvoid:
+    description: Speak in the words of the Void
+    usage: /speakvoid <void name> <message>
+    aliases:
+      - spv
+    permission: mev.events.void
